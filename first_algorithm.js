@@ -27,7 +27,7 @@ console.log(person["Random-Value"]);
 console.log(person[radom]);
 
 */
-
+/*
 // Constructor Function: Does not use return to produce a new object:
 function Person(name, age) {
   this.myName = name;
@@ -40,8 +40,12 @@ function Person(name, age) {
 let chima = new Person("John", 20);
 console.log(chima);
 console.log(chima.greeting());
-
+*/
 // Factory Function uses a return keyword to produce the new object:
+/*
+
+
+
 
 function Vehicle(make, model, year) {
   return {
@@ -63,3 +67,41 @@ console.log(myCar);
 myCar.theAdvert();
 console.log(herCar);
 herCar.theAdvert();
+*/
+// testing out the tenary Oerator:
+
+/*let gender = prompt(`What is your partner's name?`);
+let findgender = function (takegender) {
+  let answer = takegender == "Female";
+  console.log(answer);
+
+  return answer == true
+    ? `your partner is a Female`
+    : `Yor partner is a ${takegender}`;
+};
+let neat = findgender(gender);
+console.log(neat);
+*/
+
+// function weather(temp) {}
+
+let temp = [12, 40, 23, 50, 77, 20, 1, 60, 50];
+
+for (let i = 0; i < temp.length; i++) {
+  let todayTemp = temp[i];
+  console.log(todayTemp);
+  let todayWeather = "";
+
+  if (todayTemp > 10 && todayTemp < 20) {
+    todayWeather = "It's an Ok day";
+  } else if (todayTemp > 20 && todayTemp < 30) {
+    todayWeather = "it's a Good day";
+  } else if (todayTemp > 30 && todayTemp < 40) {
+    todayWeather = "it's a bit hot today";
+  } else if (todayTemp >= 41) {
+    todayWeather = "It's a hot day";
+  } else {
+    todayWeather = "It's not a day";
+  }
+  console.log(todayWeather);
+}
